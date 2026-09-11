@@ -1,0 +1,26 @@
+# --- Terraform ---
+# Local state and cache — state lives remotely in omotayotfstate, never locally
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars.json
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# --- Secrets / local overrides ---
+*.local.tfvars
+.env
+.env.*
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
