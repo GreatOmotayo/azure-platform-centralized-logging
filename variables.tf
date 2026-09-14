@@ -1,3 +1,9 @@
+# --- Subscription ---
+variable "subscription_id" {
+  description = "The single Azure subscription everything in this project lives in"
+  type        = string
+}
+
 variable "location" {
   description = "Azure region for the logging foundation"
   type        = string
